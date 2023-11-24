@@ -1,1 +1,13 @@
+import matplotlib.pyplot as plt
+import numpy as np
+x_axis_data = ['13:48:52', '13:48:54', '13:48:56', '13:48:58', '13:59:29', '13:59:31', '13:59:33',
+               '13:59:35','13:59:37','13:59:39','13:59:41','13:59:43','13:59:45','13:59:47'] #x
+y_axis_data = [242,341,4,247,242,248,248,245,247,236,572,248,242,601] #y
+plt.figure(figsize=(20,10))
+plt.plot(x_axis_data, y_axis_data, 'b*--', alpha=0.5, linewidth=1, label='acc')
 
+plt.legend()  
+plt.xlabel('Time') 
+plt.ylabel('TDS and water distance')
+
+plt.show()
